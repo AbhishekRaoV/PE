@@ -18,6 +18,9 @@
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		 <spring-cloud.version>2021.0.8</spring-cloud.version>
 		<jacoco.version>0.8.7</jacoco.version>
+		<sonar.login>admin</sonar.login>
+        	<sonar.password>Admin</sonar.password>
+        	<sonar.host.url>http://10.63.20.59:30588/</sonar.host.url>	
 		
 	</properties>
 	<dependencies>
@@ -90,6 +93,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			 <plugin>
+                    		<groupId>org.sonarsource.scanner.maven</groupId>
+                    		<artifactId>sonar-maven-plugin</artifactId>
+                    		<version>3.11.0.1845</version>
+                </plugin>
 			<plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
